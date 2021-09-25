@@ -1,0 +1,15 @@
+rint out the short descriptions of
+           any found.  Equivalent to whatis smail.
+
+OVERVIEW
+       Many options are available to man in order to give as much flexibility as possible to  the
+       user.   Changes can be made to the search path, section order, output processor, and other
+       behaviours and operations detailed below.
+
+       If set, various environment variables are interrogated to determine the operation of  man.
+       It  is possible to set the `catch all' variable $MANOPT to any string in command line for‐
+       mat with the exception that any spaces used as  part  of  an  option's  argument  must  be
+       escaped  (preceded  by a backslash).  man will parse $MANOPT prior to parsing its own com‐
+       mand line.  Those options requiring an argument will be overridden  by  the  same  options
+       found  on  the command line.  To reset all of the options set in $MANOPT, -D can be speci‐
+       fied as the initial command line option.  This  will  allow  man  to  `forget'  a

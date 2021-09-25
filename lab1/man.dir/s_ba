@@ -1,0 +1,17 @@
+             that it may be hyphenated at that point, or put "\%" at the start of a word to pre‐
+              vent it from being hyphenated.
+
+       --no-justification, --nj
+              Normally,  nroff will automatically justify text to both margins.  This option dis‐
+              ables full justification, leaving justified only  to  the  left  margin,  sometimes
+              called "ragged-right" text.
+
+              If  you  are writing a manual page and simply want to prevent nroff from justifying
+              certain paragraphs, do not use this option, but  consult  the  nroff  documentation
+              instead;  for  instance, you can use the ".na", ".nf", ".fi", and ".ad" requests to
+              temporarily disable adjusting and filling.
+
+       -p string, --preprocessor=string
+              Specify the sequence of preprocessors to run before nroff or troff/groff.  Not  all
+              installations will have a full set of preprocessors.  Some of the preprocessors and
+              the 

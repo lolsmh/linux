@@ -1,0 +1,30 @@
+displayed as
+              usual.
+
+       LANG, LC_MESSAGES
+              Depending on system and implementation, either or both of  $LANG  and  $LC_MESSAGES
+              will be interrogated for the current message locale.  man will display its messages
+              in that locale (if available).  See setlocale(3) for precise details.
+
+FILES
+       /etc/man_db.conf
+              man-db configuration file.
+
+       /usr/share/man
+              A global manual page hierarchy.
+
+       /usr/share/man/index.(bt|db|dir|pag)
+              A traditional global index database cache.
+
+       /var/cache/man/index.(bt|db|dir|pag)
+              An FHS compliant global index database cache.
+
+SEE ALSO
+       apropos(1), groff(1), less(1), manpath(1), nroff(1), troff(1), whatis(1), zsoelim(1), set‐
+       locale(3),  manpath(5), ascii(7), latin1(7), man(7), catman(8), mandb(8), the man-db pack‐
+       age manual, FSSTND
+
+HISTORY
+       1990, 1991 – Originally written by John W. Eaton (jwe@che.utexas.edu).
+
+       Dec

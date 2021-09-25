@@ -1,0 +1,24 @@
+f letters described by option -p below.
+
+       If none of the above methods provide any filter information, a default set is used.
+
+       A  formatting  pipeline  is  formed  from  the filters and the primary formatter (nroff or
+       [tg]roff with -t) and executed.  Alternatively, if an executable  program  mandb_nfmt  (or
+       mandb_tfmt  with  -t) exists in the man tree root, it is executed instead.  It gets passed
+       the manual source file, the preprocessor string, and optionally the device specified  with
+       -T or -E as arguments.
+
+OPTIONS
+       Non  argument options that are duplicated either on the command line, in $MANOPT, or both,
+       are not harmful.  For options that require an argument, each duplication will override the
+       previous argument value.
+
+   General options
+       -C file, --config-file=file
+              Use this user configuration file rather than the default of ~/.manpath.
+
+       -d, --debug
+              Print debugging information.
+
+       -D, --default
+      

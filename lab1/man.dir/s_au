@@ -1,0 +1,19 @@
+pdate
+              This  option  causes man to perform an `inode level' consistency check on its data‐
+              base caches to ensure that they are an accurate representation of  the  filesystem.
+              It will only have a useful effect if man is installed with the setuid bit set.
+
+       --no-subpages
+              By  default, man will try to interpret pairs of manual page names given on the com‐
+              mand line as equivalent to a single manual page name  containing  a  hyphen  or  an
+              underscore.   This  supports the common pattern of programs that implement a number
+              of subcommands, allowing them to provide manual pages for each that can be accessed
+              using  similar  syntax  as would be used to invoke the subcommands themselves.  For
+              example:
+
+                $ man -aw git diff
+                /usr/share/man/man1/git-diff.1.gz
+
+              To disable this behaviour, use the --no-subpages option.
+
+                $ man -aw --no-

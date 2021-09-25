@@ -1,0 +1,17 @@
+ page referenced by `alias', usually a shell manual  page,  into  the
+           default troff or groff format and pipe it to the printer named ps.  The default output
+           for groff is usually PostScript.  man --help should advise as to  which  processor  is
+           bound to the -t option.
+
+       man -l -Tdvi ./foo.1x.gz > ./foo.1x.dvi
+           This  command will decompress and format the nroff source manual page ./foo.1x.gz into
+           a device independent (dvi) file.  The redirection is necessary as the -T  flag  causes
+           output to be directed to stdout with no pager.  The output could be viewed with a pro‐
+           gram such as xdvi or further processed into PostScript using a program such as dvips.
+
+       man -k printf
+           Search the short descriptions and manual page names for the keyword printf as  regular
+           expression.  Print out any matches.  Equivalent to apropos printf.
+
+       man -f smail
+           Lookup  the  manual  pages referenced by smail and p

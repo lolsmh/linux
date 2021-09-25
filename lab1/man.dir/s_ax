@@ -1,0 +1,14 @@
+          shell.   All  double  quotes,  back-quotes  and  backslashes  in the prompt must be
+              escaped by a preceding backslash.  The prompt string may end in an escaped $  which
+              may be followed by further options for less.  By default man sets the -ix8 options.
+
+              The  $MANLESS  environment  variable  described  below may be used to set a default
+              prompt string if none is supplied on the command line.
+
+       -7, --ascii
+              When viewing a pure ascii(7) manual page on a 7 bit terminal or terminal  emulator,
+              some  characters may not display correctly when using the latin1(7) device descrip‐
+              tion with GNU nroff.  This option allows pure ascii manual pages to be displayed in
+              ascii  with the latin1 device.  It will not translate any latin1 text.  The follow‐
+              ing table shows the translations performed: some parts of it may only be  displayed
+              properly when using GNU nroff's latin1

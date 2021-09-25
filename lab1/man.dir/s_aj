@@ -1,0 +1,15 @@
+ts supplied with the package.
+
+DEFAULTS
+       man will search for the desired manual pages within the index database caches. If  the  -u
+       option is given, a cache consistency check is performed to ensure the databases accurately
+       reflect the filesystem.  If this option is always given, it is not generally necessary  to
+       run  mandb  after  the caches are initially created, unless a cache becomes corrupt.  How‐
+       ever, the cache consistency check can be slow on systems with many manual pages installed,
+       so  it  is not performed by default, and system administrators may wish to run mandb every
+       week or so to keep the database caches fresh.  To forestall problems  caused  by  outdated
+       caches,  man  will fall back to file globbing if a cache lookup fails, just as it would if
+       no cache was present.
+
+       Once a manual page has been located, a check is performed to find out if a  relative  pre‐
+       formatted  `cat' file already exists and is newer than the nr

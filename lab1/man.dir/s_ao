@@ -1,0 +1,20 @@
+rguments, input will be taken from stdin.   When  this
+              option  is not used, and man fails to find the page required, before displaying the
+              error message, it attempts to act as if this option was supplied, using the name as
+              a filename and looking for an exact match.
+
+       -w, --where, --path, --location
+              Don't actually display the manual pages, but do print the location(s) of the source
+              nroff files that would be formatted.
+
+       -W, --where-cat, --location-cat
+              Don't actually display the manual pages, but do print the location(s)  of  the  cat
+              files  that  would be displayed.  If -w and -W are both specified, print both sepa‐
+              rated by a space.
+
+       -c, --catman
+              This option is not for general use and should only be used by the catman program.
+
+       -R encoding, --recode=encoding
+              Instead of formatting the manual page in the usual way, output its source converted
+   

@@ -1,0 +1,18 @@
+on your system) via use of locale functions.  To activate such
+       support, it is necessary to set either $LC_MESSAGES, $LANG  or  another  system  dependent
+       environment  variable to your language locale, usually specified in the POSIX 1003.1 based
+       format:
+
+       <language>[_<territory>[.<character-set>[,<version>]]]
+
+       If the desired page is available in your locale, it will be displayed in lieu of the stan‐
+       dard (usually American English) page.
+
+       Support  for  international message catalogues is also featured in this package and can be
+       activated in the same way, again if available.  If you find that the manual pages and mes‐
+       sage  catalogues  supplied with this package are not available in your native language and
+       you would like to supply them, please contact the maintainer who will be coordinating such
+       activity.
+
+       For  information regarding other features and extensions available with this manual pager,
+       please read the documen

@@ -1,0 +1,23 @@
+nt variable, or by a compile-
+              time default if that is unset (usually lynx).  This option  implies  -t,  and  will
+              only work with GNU troff.
+
+       -X[dpi], --gxditview[=dpi]
+              This  option displays the output of groff in a graphical window using the gxditview
+              program.  The dpi (dots per inch) may be 75, 75-12, 100, or 100-12,  defaulting  to
+              75;  the  -12  variants  use a 12-point base font.  This option implies -T with the
+              X75, X75-12, X100, or X100-12 device respectively.
+
+       -Z, --ditroff
+              groff will run troff and then use an appropriate post-processor to  produce  output
+              suitable  for  the chosen device.  If groff -mandoc is groff, this option is passed
+              to groff and will suppress the use of a post-processor.  It implies -t.
+
+   Getting help
+       -?, --help
+              Print a help message and exit.
+
+       --usage
+              Print a short usage message and exit.
+
+       -V

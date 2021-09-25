@@ -1,0 +1,20 @@
+en searching for a regular
+              expression, this option implies -a.
+
+       --wildcard
+              Show all pages with any part of either their names or their  descriptions  matching
+              each page argument using shell-style wildcards, as with apropos(1) --wildcard.  The
+              page argument must match the entire name or description, or match  on  word  bound‐
+              aries  in  the  description.   Since  there  is usually no reasonable way to pick a
+              "best" page when searching for a wildcard, this option implies -a.
+
+       --names-only
+              If the --regex or --wildcard option is  used,  match  only  page  names,  not  page
+              descriptions, as with whatis(1).  Otherwise, no effect.
+
+       -a, --all
+              By  default, man will exit after displaying the most suitable manual page it finds.
+              Using this option forces man to display all the manual pages with names that  match
+              the search criteria.
+
+       -u, --u

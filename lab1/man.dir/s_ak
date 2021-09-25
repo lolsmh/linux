@@ -1,0 +1,17 @@
+off file.  If it does and is,
+       this preformatted file is (usually) decompressed and then displayed, via use of  a  pager.
+       The  pager  can  be  specified in a number of ways, or else will fall back to a default is
+       used (see option -P for details).  If no cat is found or is older than the nroff file, the
+       nroff is filtered through various programs and is shown immediately.
+
+       If a cat file can be produced (a relative cat directory exists and has appropriate permis‐
+       sions), man will compress and store the cat file in the background.
+
+       The filters are deciphered by a number of means.  Firstly, the command line option  -p  or
+       the environment variable $MANROFFSEQ is interrogated.  If -p was not used and the environ‐
+       ment variable was not set, the initial line of the nroff file is parsed for a preprocessor
+       string.  To contain a valid preprocessor string, the first line must resemble
+
+       '\" <string>
+
+       where string can be any combination o

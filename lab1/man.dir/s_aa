@@ -1,0 +1,19 @@
+MAN(1)                                  Manual pager utils                                 MAN(1)
+
+NAME
+       man - an interface to the on-line reference manuals
+
+SYNOPSIS
+       man  [-C  file]  [-d]  [-D]  [--warnings[=warnings]]  [-R  encoding]  [-L locale] [-m sys‐
+       tem[,...]] [-M path] [-S list] [-e extension] [-i|-I] [--regex|--wildcard]  [--names-only]
+       [-a]  [-u]  [--no-subpages]  [-P  pager] [-r prompt] [-7] [-E encoding] [--no-hyphenation]
+       [--no-justification] [-p string] [-t] [-T[device]] [-H[browser]] [-X[dpi]] [-Z] [[section]
+       page[.section] ...] ...
+       man -k [apropos options] regexp ...
+       man -K [-w|-W] [-S list] [-i|-I] [--regex] [section] term ...
+       man -f [whatis options] page ...
+       man  -l  [-C  file] [-d] [-D] [--warnings[=warnings]] [-R encoding] [-L locale] [-P pager]
+       [-r prompt] [-7] [-E encoding] [-p string] [-t] [-T[device]] [-H[browser]] [-X[dpi]]  [-Z]
+       file ...
+       man -w|-W [-C file] [-d] [-D] page ...
+       man -c [-

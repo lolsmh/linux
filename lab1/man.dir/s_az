@@ -1,0 +1,17 @@
+           nroff other than GNU's.
+
+       -E encoding, --encoding=encoding
+              Generate output for a character encoding other than the default.  For backward com‐
+              patibility,  encoding may be an nroff device such as ascii, latin1, or utf8 as well
+              as a true character encoding such as UTF-8.
+
+       --no-hyphenation, --nh
+              Normally, nroff will automatically hyphenate text at line breaks even in words that
+              do  not  contain  hyphens,  if  it is necessary to do so to lay out words on a line
+              without excessive spacing.  This option disables automatic  hyphenation,  so  words
+              will only be hyphenated if they already contain hyphens.
+
+              If  you are writing a manual page and simply want to prevent nroff from hyphenating
+              a word at an inappropriate point, do not use this option,  but  consult  the  nroff
+              documentation  instead;  for  instance,  you can put "\%" inside a word to indicate
+ 

@@ -1,0 +1,24 @@
+epeatable.
+       [expression] ...   entire expression within [ ] is repeatable.
+
+       Exact  rendering  may vary depending on the output device.  For instance, man will usually
+       not be able to render italics when running in a terminal, and will  typically  use  under‐
+       lined or coloured text instead.
+
+       The  command  or function illustration is a pattern that should match all possible invoca‐
+       tions.  In some cases it is advisable to illustrate several exclusive  invocations  as  is
+       shown in the SYNOPSIS section of this manual page.
+
+EXAMPLES
+       man ls
+           Display the manual page for the item (program) ls.
+
+       man man.7
+           Display the manual page for macro package man from section 7.
+
+       man -a intro
+           Display,  in  succession, all of the available intro manual pages contained within the
+           manual.  It is possible to quit between successive displays or skip any of them.
+
+       man -t alias | lpr -Pps
+           Format the manual

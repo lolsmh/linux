@@ -1,0 +1,14 @@
+ill try to extract information from a traditional whatis database instead.
+
+       These utilities support compressed source nroff files having, by default,  the  extensions
+       of .Z, .z and .gz.  It is possible to deal with any compression extension, but this infor‐
+       mation must be known at compile time.  Also, by default, any cat pages produced  are  com‐
+       pressed  using  gzip.   Each  `global'  manual  page  hierarchy  such as /usr/share/man or
+       /usr/X11R6/man may have any directory as its cat page hierarchy.   Traditionally  the  cat
+       pages  are stored under the same hierarchy as the man pages, but for reasons such as those
+       specified in the File Hierarchy Standard (FHS), it may be better to store them  elsewhere.
+       For  details  on  how  to do this, please read manpath(5).  For details on why to do this,
+       read the standard.
+
+       International support is available with this package.  Native language  manual  pages  are
+       accessible  (if  available  

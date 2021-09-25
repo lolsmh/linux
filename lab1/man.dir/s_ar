@@ -1,0 +1,15 @@
+e hierarchy struc‐
+              tured into sections as described in the man-db manual (under "The manual page  sys‐
+              tem").  To view manual pages outside such hierarchies, see the -l option.
+
+       -S list, -s list, --sections=list
+              List  is  a  colon-  or comma-separated list of `order specific' manual sections to
+              search.  This option overrides the $MANSECT environment variable.  (The -s spelling
+              is for compatibility with System V.)
+
+       -e sub-extension, --extension=sub-extension
+              Some  systems incorporate large packages of manual pages, such as those that accom‐
+              pany the Tcl package, into the main manual page hierarchy.  To get around the prob‐
+              lem  of  having  two manual pages with the same name such as exit(3), the Tcl pages
+              were usually all assigned to section l.  As this is unfortunate, it is now possible
+              to  put  the  pages in the correct section, and to assign a spec

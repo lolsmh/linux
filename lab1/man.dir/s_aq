@@ -1,0 +1,18 @@
+the initially determined locale.
+
+       -m system[,...], --systems=system[,...]
+              If this system has access to other operating system's manual  pages,  they  can  be
+              accessed  using  this option.  To search for a manual page from NewOS's manual page
+              collection, use the option -m NewOS.
+
+              The system specified can be a  combination  of  comma  delimited  operating  system
+              names.   To include a search of the native operating system's manual pages, include
+              the system name man in the argument string.  This option will override the  $SYSTEM
+              environment variable.
+
+       -M path, --manpath=path
+              Specify  an alternate manpath to use.  By default, man uses manpath derived code to
+              determine the path to search.  This option overrides the $MANPATH environment vari‐
+              able and causes option -m to be ignored.
+
+              A  path  specified  as a manpath must be the root of a manual pag

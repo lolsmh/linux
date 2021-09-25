@@ -1,0 +1,18 @@
+        This  option is normally issued as the very first option and resets man's behaviour
+              to its default.  Its use is to reset those  options  that  may  have  been  set  in
+              $MANOPT.  Any options that follow -D will have their usual effect.
+
+       --warnings[=warnings]
+              Enable  warnings  from  groff.   This  may  be used to perform sanity checks on the
+              source text of manual pages.  warnings is a comma-separated list of warning  names;
+              if it is not supplied, the default is "mac".  See the “Warnings” node in info groff
+              for a list of available warning names.
+
+   Main modes of operation
+       -f, --whatis
+              Equivalent to whatis.  Display a short description from the manual page, if  avail‐
+              able.  See whatis(1) for details.
+
+       -k, --apropos
+              Equivalent  to apropos.  Search the short manual page descriptions for keywords and
+              display any matches.  See apropos(1) for d

@@ -1,0 +1,29 @@
+, --version
+              Display version information.
+
+EXIT STATUS
+       0      Successful program execution.
+
+       1      Usage, syntax or configuration file error.
+
+       2      Operational error.
+
+       3      A child process returned a non-zero exit status.
+
+       16     At least one of the pages/files/keywords didn't exist or wasn't matched.
+
+ENVIRONMENT
+       MANPATH
+              If $MANPATH is set, its value is used as the path to search for manual pages.
+
+       MANROFFOPT
+              The contents of $MANROFFOPT are added to the command line every  time  man  invokes
+              the formatter (nroff, troff, or groff).
+
+       MANROFFSEQ
+              If  $MANROFFSEQ  is set, its value is used to determine the set of preprocessors to
+              pass each manual page through.  The default preprocessor list is system dependent.
+
+       MANSECT
+              If $MANSECT is set, its value is a colon-delimited list of sections and it is  used
+              to  determine which manual sections

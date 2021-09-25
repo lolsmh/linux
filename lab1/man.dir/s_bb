@@ -1,0 +1,17 @@
+letters used to designate them are: eqn (e), grap (g), pic (p), tbl (t), vgrind
+              (v), refer (r).  This option overrides the $MANROFFSEQ environment variable.  zsoe‐
+              lim is always run as the very first preprocessor.
+
+       -t, --troff
+              Use groff -mandoc to format the manual page to stdout.  This option is not required
+              in conjunction with -H, -T, or -Z.
+
+       -T[device], --troff-device[=device]
+              This option is used to change groff (or possibly troff's) output to be suitable for
+              a device  other  than  the  default.   It  implies  -t.   Examples  (provided  with
+              Groff-1.17) include dvi, latin1, ps, utf8, X75 and X100.
+
+       -H[browser], --html[=browser]
+              This  option  will cause groff to produce HTML output, and will display that output
+              in a web browser.  The choice of browser is  determined  by  the  optional  browser
+              argument if one is provided, by the $BROWSER environme

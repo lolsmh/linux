@@ -1,0 +1,17 @@
+ to search and in what order.  The default is "1
+              1p 8 2 3 3p 4 5 6 7 9 0p n l p o 1x 2x 3x 4x 5x 6x 7x 8x", unless overridden by the
+              SECTION directive in /etc/man_db.conf.
+
+       MANPAGER, PAGER
+              If  $MANPAGER or $PAGER is set ($MANPAGER is used in preference), its value is used
+              as the name of the program used to display the manual page.  By  default,  less  is
+              used.
+
+              The  value  may  be  a simple command name or a command with arguments, and may use
+              shell quoting (backslashes, single quotes, or double quotes).  It may not use pipes
+              to  connect  multiple  commands;  if you need that, use a wrapper script, which may
+              take the file to display either as an argument or on standard input.
+
+       MANLESS
+              If $MANLESS is set, its value will be used as the default  prompt  string  for  the
+              less pager, as if it had been passed using the -r option (so any occurrences o

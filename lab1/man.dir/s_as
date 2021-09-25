@@ -1,0 +1,18 @@
+ific `extension' to
+              them, in this case, exit(3tcl).  Under normal operation, man will  display  exit(3)
+              in  preference  to  exit(3tcl).  To negotiate this situation and to avoid having to
+              know which section the page you require resides in, it is now possible to give  man
+              a sub-extension string indicating which package the page must belong to.  Using the
+              above example, supplying the option -e tcl to man will restrict the search to pages
+              having an extension of *tcl.
+
+       -i, --ignore-case
+              Ignore case when searching for manual pages.  This is the default.
+
+       -I, --match-case
+              Search for manual pages case-sensitively.
+
+       --regex
+              Show  all  pages with any part of either their names or their descriptions matching
+              each page argument as a regular expression, as with  apropos(1).   Since  there  is
+              usually  no  reasonable  way  to  pick  a  "best" page wh

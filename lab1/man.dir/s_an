@@ -1,0 +1,17 @@
+etails.
+
+       -K, --global-apropos
+              Search for text in all manual pages.  This is a brute-force search, and  is  likely
+              to take some time; if you can, you should specify a section to reduce the number of
+              pages that need to be searched.  Search terms may be simple strings (the  default),
+              or regular expressions if the --regex option is used.
+
+              Note that this searches the sources of the manual pages, not the rendered text, and
+              so may include false positives  due  to  things  like  comments  in  source  files.
+              Searching the rendered text would be much slower.
+
+       -l, --local-file
+              Activate  `local' mode.  Format and display local manual files instead of searching
+              through the system's manual collection.  Each manual page argument will  be  inter‐
+              preted as an nroff source file in the correct format.  No cat file is produced.  If
+              '-' is listed as one of the a

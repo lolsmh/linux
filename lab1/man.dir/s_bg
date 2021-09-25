@@ -1,0 +1,16 @@
+can
+              be expressed as command line options, and are thus candidates for being included in
+              $MANOPT  it  is  expected  that  they  will become obsolete.  N.B.  All spaces that
+              should be interpreted as part of an option's argument must be escaped.
+
+       MANWIDTH
+              If $MANWIDTH is set, its value is used as the line length for  which  manual  pages
+              should  be formatted.  If it is not set, manual pages will be formatted with a line
+              length appropriate to the  current  terminal  (using  the  value  of  $COLUMNS,  an
+              ioctl(2)  if  available, or falling back to 80 characters if neither is available).
+              Cat pages will only be saved when the default formatting can be used, that is  when
+              the terminal line length is between 66 and 80 characters.
+
+       MAN_KEEP_FORMATTING
+              Normally,  when  output is not being directed to a terminal (such as to a file or a
+              pipe), formatting ch

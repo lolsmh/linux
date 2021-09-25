@@ -1,0 +1,15 @@
+bout  the
+       options specified in $MANOPT although they must still have been valid.
+
+       The manual pager utilities packaged as man-db make extensive use of index database caches.
+       These caches contain information such as where each  manual  page  can  be  found  on  the
+       filesystem  and what its whatis (short one line description of the man page) contains, and
+       allow man to run faster than if it had to search the filesystem  each  time  to  find  the
+       appropriate  manual  page.   If  requested  using  the -u option, man will ensure that the
+       caches remain consistent, which can obviate the need to manually run  software  to  update
+       traditional whatis text databases.
+
+       If  man  cannot find a mandb initiated index database for a particular manual page hierar‐
+       chy, it will still search for the requested manual pages, although file globbing  will  be
+       necessary to search within that hierarchy.  If whatis or apropos fails to find an index it
+       w

@@ -1,0 +1,16 @@
+f the
+              text $MAN_PN will be expanded in the same way).  For example, if you  want  to  set
+              the   prompt  string  unconditionally  to  “my  prompt  string”,  set  $MANLESS  to
+              ‘-Psmy prompt string’.  Using the -r option overrides this environment variable.
+
+       BROWSER
+              If $BROWSER is set, its value is a colon-delimited list of commands, each of  which
+              in  turn is used to try to start a web browser for man --html.  In each command, %s
+              is replaced by a filename containing the HTML output from groff, %% is replaced  by
+              a single percent sign (%), and %c is replaced by a colon (:).
+
+       SYSTEM If  $SYSTEM is set, it will have the same effect as if it had been specified as the
+              argument to the -m option.
+
+       MANOPT If $MANOPT is set, it will be parsed prior to man's command line and is expected to
+              be in a similar format.  As all of the other man specific environment variables 

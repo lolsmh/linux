@@ -1,0 +1,21 @@
+   Special files (usually found in /dev)
+       5   File formats and conventions eg /etc/passwd
+       6   Games
+       7   Miscellaneous (including macro packages and conventions), e.g. man(7), groff(7)
+       8   System administration commands (usually only for root)
+       9   Kernel routines [Non standard]
+
+       A manual page consists of several sections.
+
+       Conventional section names include NAME, SYNOPSIS,  CONFIGURATION,  DESCRIPTION,  OPTIONS,
+       EXIT STATUS,  RETURN VALUE,  ERRORS,  ENVIRONMENT,  FILES, VERSIONS, CONFORMING TO, NOTES,
+       BUGS, EXAMPLE, AUTHORS, and SEE ALSO.
+
+       The following conventions apply to the SYNOPSIS section and can be  used  as  a  guide  in
+       other sections.
+
+       bold text          type exactly as shown.
+       italic text        replace with appropriate argument.
+       [-abc]             any or all arguments within [ ] are optional.
+       -a|-b              options delimited by | cannot be used together.
+       argument ...       argument is r

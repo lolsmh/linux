@@ -1,0 +1,17 @@
+(7) device.
+
+              Description           Octal   latin1   ascii
+              ─────────────────────────────────────────────
+              continuation hyphen    255      ‐        -
+              bullet (middle dot)    267      ·        o
+              acute accent           264      ´        '
+              multiplication sign    327      ×        x
+
+              If  the  latin1  column  displays correctly, your terminal may be set up for latin1
+              characters and this option is not necessary.  If the latin1 and ascii  columns  are
+              identical,  you  are reading this page using this option or man did not format this
+              page using the latin1 device description.  If the latin1 column is missing or  cor‐
+              rupt, you may need to view manual pages with this option.
+
+              This  option is ignored when using options -t, -H, -T, or -Z and may be useless for
+   

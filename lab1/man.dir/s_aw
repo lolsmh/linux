@@ -1,0 +1,20 @@
+rompt and some sensible options.  The default prompt looks like
+
+               Manual page name(sec) line x
+
+              where name denotes the manual page name, sec denotes the section it was found under
+              and  x  the  current  line number.  This is achieved by using the $LESS environment
+              variable.
+
+              Supplying -r with a string will override this default.  The string may contain  the
+              text  $MAN_PN which will be expanded to the name of the current manual page and its
+              section name surrounded by `(' and `)'.  The string used  to  produce  the  default
+              could be expressed as
+
+              \ Manual\ page\ \$MAN_PN\ ?ltline\ %lt?L/%L.:
+              byte\ %bB?s/%s..?\ (END):?pB\ %pB\\%..
+              (press h for help or q to quit)
+
+              It is broken into three lines here for the sake of readability only.  For its mean‐
+              ing see the less(1) manual page.  The prompt  string  is  first  evaluated  by  the
+    

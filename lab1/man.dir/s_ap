@@ -1,0 +1,14 @@
+           to  the  specified  encoding.  If you already know the encoding of the source file,
+              you can also use manconv(1) directly.  However, this option allows you  to  convert
+              several  manual  pages  to a single encoding without having to explicitly state the
+              encoding of each, provided that they were already installed in a structure  similar
+              to a manual page hierarchy.
+
+   Finding manual pages
+       -L locale, --locale=locale
+              man  will normally determine your current locale by a call to the C function setlo‐
+              cale(3)  which  interrogates  various  environment  variables,  possibly  including
+              $LC_MESSAGES  and  $LANG.   To  temporarily override the determined value, use this
+              option to supply a locale string directly to man.   Note  that  it  will  not  take
+              effect until the search for pages actually begins.  Output such as the help message
+              will always be displayed in 
