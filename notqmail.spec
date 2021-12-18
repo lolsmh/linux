@@ -27,12 +27,8 @@ Source1: %{name}-permissions.easy
 Source2: %{name}-permissions.secure
 Source3: %{name}-permissions.paranoid
 %endif
-Source4: system-users-qmail.conf
-%if %{undefined suse_version} && %{undefined sles_version}
 Group: System Environment/Base
-%else
-Group: Productivity/Networking/Email/Servers
-%endif
+#Group: Productivity/Networking/Email/Servers
 BuildRequires: rpm gcc make coreutils
 BuildRequires: glibc glibc-devel
 
@@ -44,21 +40,10 @@ Requires(postun): shadow-utils
 Requires(pre): pwdutils
 Requires(postun): pwdutils
 %endif
-%if %{undefined fedora_version} && %{undefined centos_version} && %{undefined rhel_version} && %{undefined sles_version} && %{undefined suse_version}
-BuildRequires: sysuser-tools
-%endif
-%if 0%{?suse_version} >= 1500 || 0%{?sles_version} >= 15
-BuildRequires: sysuser-tools
-%endif
 
-##################################### OBS ####################################
 %if %build_on_obs == 1
-%if 0%{?suse_version}
-BuildRequires: -post-build-checks  
-#!BuildIgnore: post-build-checks  
+BuildRequires: -post-build-checks
 %endif
-%endif
-##############################################################################
 
 Requires: /usr/sbin/useradd /usr/sbin/userdel /usr/sbin/groupadd /usr/sbin/groupdel
 Requires: /sbin/chkconfig procps
@@ -114,18 +99,13 @@ This package contains the documentation for %{name}
 
 %prep
 %setup
-
+yum install systemd -y
 %build
-%if %{undefined fedora_version} && %{undefined centos_version} && %{undefined rhel_version} && %{undefined sles_version} && %{undefined suse_version}
-  %sysusers_generate_pre %{S:4} notqmail
-%endif
-%if 0%{?suse_version} >= 1500 || 0%{?sles_version} >= 15
-  %sysusers_generate_pre %{S:4} notqmail
-%endif
+
 conf_cc=`head -1 conf-cc`
 echo "$conf_cc -g -fPIC" > conf-cc
 echo "cc -fPIE -pie"     > conf-ld
-make -s it man NROFF=true
+make it man NROFF=true
 
 %install
 env DESTDIR=%{buildroot} ./instpackage
@@ -143,7 +123,7 @@ rmdir --ignore-fail-on-non-empty %{buildroot}%{qmaildir}/man
   install -m 644 %{S:2} %{buildroot}%{_sysconfdir}/permissions.d/%{name}-permissions.secure
 %endif
 %if "%{?_unitdir}" != ""
-  make -s qmail-send.service
+  make qmail-send.service
   %{__mkdir_p} %{buildroot}%{_unitdir}
   install -m 644 qmail-send.service %{buildroot}%{_unitdir}/%{name}.service
 %endif
